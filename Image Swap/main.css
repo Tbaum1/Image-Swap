@@ -1,28 +1,26 @@
-* {
-    box-sizing: border-box;
+var imageArray = [
+    "images/river.jpg",
+    "images/boss.jpg",    
+    "images/waterfall.jpg",
+    "images/koen.jpg",
+    "images/sunset.jpg",
+    "images/mountain.jpg",
+    "images/paradise.jpg",     
+    "images/cowboys.png"
+]
+
+function showImage(){
+    for(i = 0; i < 8; i++){
+        document.getElementById("img-" + i).src = imageArray[i];
+    }
 }
 
-.column {
-    float: left;
-    padding: 5px;
+function swapImage(imgPath, imgText) {
+    var mainImg = document.getElementById('mainImg');
+        
+    mainImg.src = imgPath;
+    mainImg.alt = imgText;
+    mainImg.title = imgText;
 }
 
-#mainDiv {
-    width: 525px;
-    height: 325px;
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-#mainImg{
-    width: 100%;
-    height: 100%;
-}
-
-#thumbnails{    
-    width: 1000px;
-    display: block;
-    margin: 0 auto;
-} 
+window.addEventListener("load", showImage);

@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    padding: 5px;
+}
+
+#mainDiv {
+    width: 625px;
+    height: 425px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+#mainImg{
+    width: 100%;
+    height: 100%;
+}
+
+#thumbnails{    
+    width: 1000px;
+    display: block;
+    margin: 0 auto;
+} 

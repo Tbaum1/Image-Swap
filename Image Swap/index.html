@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Image Swap</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" media="screen" href="main.css" />      
+</head>
+  <body>
+      <div id="mainDiv">          
+              <img src="images/koen.jpg" id="mainImg" alt="cowboys logo">        
+      </div>
+      <div id="thumbnails" class="row">        
+        <div class="column">
+           <img id="img-1" src="images/river.jpg" alt="River" onclick="swapImage('images/river.jpg', 'River')" height="125" width="225">
+        </div>
+        <div  class="column">
+          <img id="img-2" src="images/boss.jpg" alt="Shark" onclick="swapImage('images/boss.jpg', 'Shark')" height="125" width="225">
+        </div>
+        <div class="column">
+            <img id="img-3" src="images/waterfall.jpg" alt="Waterfall" onclick="swapImage('images/waterfall.jpg', 'Waterfall')" height="125" width="225">
+        </div>
+        <div class="column">
+          <img id="img-4" src="images/koen.jpg" alt="koenegsegg" onclick="swapImage('images/koen.jpg', 'koenegsegg')" height="125" width="225">
+        </div>
+        <div class="column">
+          <img id="img-5" src="images/sunset.jpg" alt="Sunset" onclick="swapImage('images/sunset.jpg', 'Sunset')" height="125" width="225">
+        </div>        
+        <div class="column">
+          <img id="img-6" src="images/mountain.jpg" alt="Mountain" onclick="swapImage('images/mountain.jpg', 'Mountain')" height="125" width="225">
+        </div>
+        <div class="column">
+          <img id="img-6" src="images/paradise.jpg" alt="Paradise" onclick="swapImage('images/paradise.jpg', 'Paradise')" height="125" width="225">
+        </div>
+        <div class="column">
+          <img id="img-6" src="images/cowboys.png" alt="Cowboys" onclick="swapImage('images/cowboys.png', 'Cowboys')" height="125" width="225">
+        </div>
+      </div>
+    <script src="main.js"></script>
+</body>
+</html>

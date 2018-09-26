@@ -1,3 +1,5 @@
+var mainImg = document.getElementById('mainImg');
+
 var imageArray = [
     "images/river.jpg",
     "images/boss.jpg",    
@@ -16,11 +18,17 @@ function showImage(){
 }
 
 function swapImage(imgPath, imgText) {
-    var mainImg = document.getElementById('mainImg');
+    
         
     mainImg.src = imgPath;
     mainImg.alt = imgText;
     mainImg.title = imgText;
 }
 
+function imageTimer(){
+    var num = Math.floor(Math.random() * imageArray.length);
+    mainImg.src = imageArray[num];
+}
+
+setInterval(imageTimer,3000)
 window.addEventListener("load", showImage);
